@@ -1,0 +1,80 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "tf2ray/1.0.0": {
+        "dependencies": {
+          "JitterPhysics": "0.2.0.20",
+          "Physac-cs": "1.0.0",
+          "Raygui-cs": "1.0.0",
+          "Raylib-cs": "3.5.0"
+        },
+        "runtime": {
+          "tf2ray.dll": {}
+        }
+      },
+      "JitterPhysics/0.2.0.20": {
+        "runtime": {
+          "lib/net4/Jitter.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.0.20"
+          }
+        }
+      },
+      "Physac-cs/1.0.0": {
+        "dependencies": {
+          "Raylib-cs": "3.5.0"
+        },
+        "runtime": {
+          "Physac-cs.dll": {}
+        }
+      },
+      "Raygui-cs/1.0.0": {
+        "dependencies": {
+          "Raylib-cs": "3.5.0"
+        },
+        "runtime": {
+          "Raygui-cs.dll": {}
+        }
+      },
+      "Raylib-cs/3.5.0": {
+        "runtime": {
+          "Raylib-cs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "tf2ray/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JitterPhysics/0.2.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Kgju3DCxS6ot55LX5+tFcALVcEDEfQ7jFkhjY+FR1bOn8Dh1YitomA9E6ZWIFGdKXeYDW1SKhGvKOnqJYjz4gQ==",
+      "path": "jitterphysics/0.2.0.20",
+      "hashPath": "jitterphysics.0.2.0.20.nupkg.sha512"
+    },
+    "Physac-cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Raygui-cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Raylib-cs/3.5.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,7 @@
+D:\Users\Joshua\Documents\GitHub\tf2ray\Raylib-cs\bin\Debug\netstandard2.1\Raylib-cs.deps.json
+D:\Users\Joshua\Documents\GitHub\tf2ray\Raylib-cs\bin\Debug\netstandard2.1\Raylib-cs.dll
+D:\Users\Joshua\Documents\GitHub\tf2ray\Raylib-cs\bin\Debug\netstandard2.1\Raylib-cs.pdb
+D:\Users\Joshua\Documents\GitHub\tf2ray\Raylib-cs\obj\Debug\netstandard2.1\Raylib-cs.csprojAssemblyReference.cache
+D:\Users\Joshua\Documents\GitHub\tf2ray\Raylib-cs\obj\Debug\netstandard2.1\Raylib-cs.csproj.CoreCompileInputs.cache
+D:\Users\Joshua\Documents\GitHub\tf2ray\Raylib-cs\obj\Debug\netstandard2.1\Raylib-cs.dll
+D:\Users\Joshua\Documents\GitHub\tf2ray\Raylib-cs\obj\Debug\netstandard2.1\Raylib-cs.pdb

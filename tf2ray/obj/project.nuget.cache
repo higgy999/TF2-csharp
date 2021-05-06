@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "0EjuygE/uUbdtocIfhmFnf52DGXhL6fydXlyYb+MuhU80UdOQJsgmOnQtZpaLV4BJq6WrJqiBHtcqXui7juqgw==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\tf2ray\\tf2ray.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Joshua\\.nuget\\packages\\jitterphysics\\0.2.0.20\\jitterphysics.0.2.0.20.nupkg.sha512",
+    "C:\\Users\\Joshua\\.nuget\\packages\\raylib-cs\\3.5.0\\raylib-cs.3.5.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'JitterPhysics 0.2.0.20' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "JitterPhysics",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

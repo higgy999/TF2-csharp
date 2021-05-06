@@ -1,0 +1,179 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "JitterPhysics/0.2.0.20": {
+        "type": "package",
+        "compile": {
+          "lib/net4/Jitter.dll": {}
+        },
+        "runtime": {
+          "lib/net4/Jitter.dll": {}
+        }
+      },
+      "Physac-cs/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Raylib-cs": "3.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Physac-cs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Physac-cs.dll": {}
+        }
+      },
+      "Raygui-cs/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Raylib-cs": "3.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Raygui-cs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Raygui-cs.dll": {}
+        }
+      },
+      "Raylib-cs/3.5.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Raylib-cs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Raylib-cs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JitterPhysics/0.2.0.20": {
+      "sha512": "Kgju3DCxS6ot55LX5+tFcALVcEDEfQ7jFkhjY+FR1bOn8Dh1YitomA9E6ZWIFGdKXeYDW1SKhGvKOnqJYjz4gQ==",
+      "type": "package",
+      "path": "jitterphysics/0.2.0.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "jitterphysics.0.2.0.20.nupkg.sha512",
+        "jitterphysics.nuspec",
+        "lib/net4/Jitter.dll",
+        "lib/net4/Jitter.pdb",
+        "lib/net4/Jitter.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8/Jitter.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/Jitter.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8/Jitter.xml"
+      ]
+    },
+    "Physac-cs/1.0.0": {
+      "type": "project",
+      "path": "../Physac-cs/Physac-cs.csproj",
+      "msbuildProject": "../Physac-cs/Physac-cs.csproj"
+    },
+    "Raygui-cs/1.0.0": {
+      "type": "project",
+      "path": "../Raygui-cs/Raygui-cs.csproj",
+      "msbuildProject": "../Raygui-cs/Raygui-cs.csproj"
+    },
+    "Raylib-cs/3.5.0": {
+      "type": "project",
+      "path": "../Raylib-cs/Raylib-cs.csproj",
+      "msbuildProject": "../Raylib-cs/Raylib-cs.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "JitterPhysics >= 0.2.0.20",
+      "Physac-cs >= 1.0.0",
+      "Raygui-cs >= 1.0.0",
+      "Raylib-cs >= 3.5.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Joshua\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\tf2ray\\tf2ray.csproj",
+      "projectName": "tf2ray",
+      "projectPath": "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\tf2ray\\tf2ray.csproj",
+      "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\tf2ray\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\Physac-cs\\Physac-cs.csproj": {
+              "projectPath": "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\Physac-cs\\Physac-cs.csproj"
+            },
+            "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\Raygui-cs\\Raygui-cs.csproj": {
+              "projectPath": "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\Raygui-cs\\Raygui-cs.csproj"
+            },
+            "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\Raylib-cs\\Raylib-cs.csproj": {
+              "projectPath": "D:\\Users\\Joshua\\Documents\\GitHub\\tf2ray\\Raylib-cs\\Raylib-cs.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "JitterPhysics": {
+            "target": "Package",
+            "version": "[0.2.0.20, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'JitterPhysics 0.2.0.20' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "JitterPhysics",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
