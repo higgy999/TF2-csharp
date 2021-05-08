@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81e531c6-ef41-49cb-803f-bb1c94ce3296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TF2-opengl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TF2-opengl.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/joml-1.10.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/joml-1.10.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/joml-1.10.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp-natives-linux-arm32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp-natives-linux-arm64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp-natives-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp-natives-macos.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp-natives-windows-x86.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp-natives-windows.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-assimp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw-natives-linux-arm32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw-natives-linux-arm64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw-natives-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw-natives-macos.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw-natives-windows-x86.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw-natives-windows.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-glfw.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-natives-linux-arm32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-natives-linux-arm64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-natives-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-natives-macos.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-natives-windows-x86.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-natives-windows.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal-natives-linux-arm32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal-natives-linux-arm64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal-natives-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal-natives-macos.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal-natives-windows-x86.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal-natives-windows.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-openal.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opencl-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opencl-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opencl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl-natives-linux-arm32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl-natives-linux-arm64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl-natives-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl-natives-macos.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl-natives-windows-x86.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl-natives-windows.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-opengl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb-natives-linux-arm32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb-natives-linux-arm64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb-natives-linux.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb-natives-macos.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb-natives-windows-x86.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb-natives-windows.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl-stb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/lwjgl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/TF2-csharp/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/TF2-csharp/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/CharEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/ContentScaleEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Delegates.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/ClientApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/ConnectionStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/Constants.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/ContextApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/ContextAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/CursorMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/CursorType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/ErrorCode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/GamePadAxis.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/GamePadButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/Hat.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/Hint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/InputMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/InputState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/Joystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/Keys.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/ModifierKeys.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/MouseButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/Profile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/ReleaseBehavior.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/Robustness.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Enums/WindowAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Exception.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/FileDropEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/GameWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Glfw.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/JetBrains.Annotations.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/KeyEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/MaximizeEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/MouseButtonEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/MouseMoveEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Native.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/NativeWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/SizeChangeEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Strings.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Strings.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/Cursor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/EGLContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/EGLDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/EGLSurface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/GLXContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/GamePadState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/GammaRamp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/GammaRampInternal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/HGLRC.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/Image.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/Monitor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/NSOpenGLContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/OSMesaContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/VideoMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Structs/Window.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Util.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLFW/Vulkan.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TF2-csharp.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TF2-csharp.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/TF2-csharp.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/TF2-csharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/TF2-csharp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/TF2-csharp.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/TF2-csharp.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/TF2-csharp.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/glfw3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ref/TF2-csharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.csproj.GenerateResource.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2-csharp.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/TF2_csharp.GLFW.Strings.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/ref/TF2-csharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/TF2-csharp.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/TF2-csharp.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/TF2-csharp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1sGacZfC1Ii6jyjR4z8ZTT2ZpVV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.toast.tf2gl.Main" />
+      <module name="TF2-opengl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.toast.tf2gl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81e531c6-ef41-49cb-803f-bb1c94ce3296" name="Default Changelist" comment="" />
+      <created>1620501463261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620501463261</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
