@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81e531c6-ef41-49cb-803f-bb1c94ce3296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/EBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Shader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/VAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/VBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/textures/josh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-1.10.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-1.10.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-1.10.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-1.3.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-1.3.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.10.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.10.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.10.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.3.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.3.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TF2-opengl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TF2-opengl.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TF2-opengl.iws" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/shaders/triangle.frag" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/triangle.frag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/shaders/triangle.vert" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/triangle.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.frag" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.frag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.vert" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,11 +58,16 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path" value="D:\Users\Joshua\Documents\GitHub\TF2-csharp\libs" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/gdx-bullet" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35287082" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />

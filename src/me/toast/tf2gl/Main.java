@@ -1,32 +1,35 @@
 package me.toast.tf2gl;
 
+import org.lwjgl.BufferUtils;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
+import org.lwjgl.system.MemoryStack;
 
-import static org.joml.Math.sqrt;
+import java.nio.ByteBuffer;
+import java.nio.IntBuffer;
+
 import static org.lwjgl.glfw.Callbacks.*;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL33.*;
+import static org.lwjgl.system.MemoryStack.stackPush;
 import static org.lwjgl.system.MemoryUtil.*;
+import static org.lwjgl.stb.STBImage.*;
 
 public class Main {
     // The window handle
     private long window;
 
     float[] vertices =
-    {//               COORDINATES                  /     COLORS           //
-            -0.5f, -0.5f * (sqrt(3)) * 1 / 3, 0.0f,     0.8f, 0.3f,  0.02f, // Lower left corner
-            0.5f, -0.5f * (sqrt(3)) * 1 / 3, 0.0f,     0.8f, 0.3f,  0.02f, // Lower right corner
-            0.0f,  0.5f * (sqrt(3)) * 2 / 3, 0.0f,     1.0f, 0.6f,  0.32f, // Upper corner
-            -0.25f, 0.5f * (sqrt(3)) * 1 / 6, 0.0f,     0.9f, 0.45f, 0.17f, // Inner left
-            0.25f, 0.5f * (sqrt(3)) * 1 / 6, 0.0f,     0.9f, 0.45f, 0.17f, // Inner right
-            0.0f, -0.5f * (sqrt(3)) * 1 / 3, 0.0f,     0.8f, 0.3f,  0.02f  // Inner down
+    { //     COORDINATES     /        COLORS      /   TexCoord  //
+            -0.5f, -0.5f, 0.0f,     1.0f, 0.0f, 0.0f,	0.0f, 0.0f, // Lower left corner
+            -0.5f,  0.5f, 0.0f,     0.0f, 1.0f, 0.0f,	0.0f, 1.0f, // Upper left corner
+            0.5f,  0.5f, 0.0f,     0.0f, 0.0f, 1.0f,	1.0f, 1.0f, // Upper right corner
+            0.5f, -0.5f, 0.0f,     1.0f, 1.0f, 1.0f,	1.0f, 0.0f  // Lower right corner
     };
 
     int[] indices =  {
-            0, 3, 5, // Lower left triangle
-            3, 2, 4, // Lower right triangle
-            5, 4, 1 // Upper triangle
+            0, 2, 1, // Upper triangle
+            0, 3, 2 // Lower triangle
     };
 
     public void run() {
@@ -101,14 +104,58 @@ public class Main {
         EBO ebo = new EBO(indices);
 
         //Tell the VAO what the data means
-        vao.LinkAttrib(vbo, 0, 3, GL_FLOAT, 6 * Float.BYTES, 0);
-        vao.LinkAttrib(vbo, 1, 3, GL_FLOAT, 6 * Float.BYTES, 3 * Float.BYTES);
+        vao.LinkAttrib(vbo, 0, 3, GL_FLOAT, 8 * Float.BYTES, 0);
+        vao.LinkAttrib(vbo, 1, 3, GL_FLOAT, 8 * Float.BYTES, 3 * Float.BYTES);
+        vao.LinkAttrib(vbo, 2, 2, GL_FLOAT, 8 * Float.BYTES, 6 * Float.BYTES);
         //Unbind everything
         vao.Unbind();
         vbo.Unbind();
         ebo.Unbind();
 
         int uniID = glGetUniformLocation(shader.ID, "scale");
+
+        int widthImg, heightImg, numberOfColorChannels;
+        IntBuffer w = BufferUtils.createIntBuffer(1);
+        IntBuffer h = BufferUtils.createIntBuffer(1);
+        IntBuffer comp = BufferUtils.createIntBuffer(1);
+        stbi_set_flip_vertically_on_load(true);
+        ByteBuffer bytes = stbi_load("./assets/textures/josh.png", w, h, comp, 0);
+        widthImg = w.get(0);
+        heightImg = h.get(0);
+        numberOfColorChannels = comp.get(0);
+
+        int texture = glGenTextures();
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture);
+
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthImg, heightImg, 0, GL_RGBA, GL_UNSIGNED_BYTE, bytes);
+        if (bytes != null) {
+            if (numberOfColorChannels == 3) {
+                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, widthImg, heightImg,
+                        0, GL_RGB, GL_UNSIGNED_BYTE, bytes);
+            } else if (numberOfColorChannels == 4) {
+                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthImg, heightImg,
+                        0, GL_RGBA, GL_UNSIGNED_BYTE, bytes);
+            } else {
+                assert false : "Error: (Texture) Unknown number of channels '" + numberOfColorChannels + "'";
+            }
+        } else {
+            assert false : "Error: (Texture) Could not load image '" + "./assets/textures/josh.png" + "'";
+        }
+        glGenerateMipmap(GL_TEXTURE_2D);
+
+        stbi_image_free(bytes);
+        glBindTexture(GL_TEXTURE_2D, 0);
+
+        int texUni = glGetUniformLocation(shader.ID, "tex0");
+        shader.Bind();
+        glUniform1i(texUni, 0);
 
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
@@ -118,10 +165,11 @@ public class Main {
             //Tell GL we want to use this Shader
             shader.Bind();
             glUniform1f(uniID, 0.5f);
+            glBindTexture(GL_TEXTURE_2D, texture);
             //Tell GL we want to use this VAO
             vao.Bind();
             //Draw the triangle
-            glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_INT, 0);
+            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
             glfwSwapBuffers(window);
             glfwPollEvents();
@@ -130,6 +178,7 @@ public class Main {
         vao.Delete();
         vbo.Delete();
         ebo.Delete();
+        glDeleteTextures(texture);
         shader.Delete();
     }
 
