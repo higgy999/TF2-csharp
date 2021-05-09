@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81e531c6-ef41-49cb-803f-bb1c94ce3296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/shaders/triangle.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/shaders/triangle.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs_err_pid65092.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs_err_pid84540.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TF2-opengl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/EBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Shader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/VAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/VBO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TF2-opengl.iws" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/shaders/triangle.frag" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/triangle.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/shaders/triangle.vert" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/triangle.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.frag" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.vert" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +55,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35287082" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
