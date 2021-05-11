@@ -3,7 +3,6 @@ package me.toast.tf2gl;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
-import org.lwjgl.system.MemoryStack;
 
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
@@ -11,7 +10,6 @@ import java.nio.IntBuffer;
 import static org.lwjgl.glfw.Callbacks.*;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL33.*;
-import static org.lwjgl.system.MemoryStack.stackPush;
 import static org.lwjgl.system.MemoryUtil.*;
 import static org.lwjgl.stb.STBImage.*;
 
@@ -114,48 +112,8 @@ public class Main {
 
         int uniID = glGetUniformLocation(shader.ID, "scale");
 
-        int widthImg, heightImg, numberOfColorChannels;
-        IntBuffer w = BufferUtils.createIntBuffer(1);
-        IntBuffer h = BufferUtils.createIntBuffer(1);
-        IntBuffer comp = BufferUtils.createIntBuffer(1);
-        stbi_set_flip_vertically_on_load(true);
-        ByteBuffer bytes = stbi_load("./assets/textures/josh.png", w, h, comp, 0);
-        widthImg = w.get(0);
-        heightImg = h.get(0);
-        numberOfColorChannels = comp.get(0);
-
-        int texture = glGenTextures();
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture);
-
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthImg, heightImg, 0, GL_RGBA, GL_UNSIGNED_BYTE, bytes);
-        if (bytes != null) {
-            if (numberOfColorChannels == 3) {
-                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, widthImg, heightImg,
-                        0, GL_RGB, GL_UNSIGNED_BYTE, bytes);
-            } else if (numberOfColorChannels == 4) {
-                glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthImg, heightImg,
-                        0, GL_RGBA, GL_UNSIGNED_BYTE, bytes);
-            } else {
-                assert false : "Error: (Texture) Unknown number of channels '" + numberOfColorChannels + "'";
-            }
-        } else {
-            assert false : "Error: (Texture) Could not load image '" + "./assets/textures/josh.png" + "'";
-        }
-        glGenerateMipmap(GL_TEXTURE_2D);
-
-        stbi_image_free(bytes);
-        glBindTexture(GL_TEXTURE_2D, 0);
-
-        int texUni = glGetUniformLocation(shader.ID, "tex0");
-        shader.Bind();
-        glUniform1i(texUni, 0);
+        Texture josh = new Texture("./assets/textures/josh.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
+        josh.TextureUnit(shader, "tex0", 0);
 
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
@@ -165,7 +123,7 @@ public class Main {
             //Tell GL we want to use this Shader
             shader.Bind();
             glUniform1f(uniID, 0.5f);
-            glBindTexture(GL_TEXTURE_2D, texture);
+            josh.Bind();
             //Tell GL we want to use this VAO
             vao.Bind();
             //Draw the triangle
@@ -178,7 +136,7 @@ public class Main {
         vao.Delete();
         vbo.Delete();
         ebo.Delete();
-        glDeleteTextures(texture);
+        josh.Delete();
         shader.Delete();
     }
 

@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81e531c6-ef41-49cb-803f-bb1c94ce3296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/textures/josh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-1.10.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-1.10.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-1.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-1.3.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-1.3.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-1.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.10.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.10.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.3.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.3.1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/gdx-bullet-1.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TF2-opengl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TF2-opengl.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TF2-opengl.iws" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/shaders/triangle.frag" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/triangle.frag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/shaders/triangle.vert" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/triangle.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +31,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="ed0c3531-84c8-44cb-9b56-dc81bcc75541" />
+  </component>
   <component name="ProjectId" id="1sGacZfC1Ii6jyjR4z8ZTT2ZpVV" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -70,7 +57,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35287082" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
