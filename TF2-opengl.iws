@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TF2-opengl:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="81e531c6-ef41-49cb-803f-bb1c94ce3296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TF2-opengl.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TF2-opengl.iws" beforeDir="false" afterPath="$PROJECT_DIR$/TF2-opengl.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/shaders/triangle.frag" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/triangle.frag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/shaders/triangle.vert" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/triangle.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Shader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Shader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Texture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/me/toast/tf2gl/Texture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.vert" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TF2-opengl/shaders/triangle.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/toast/tf2gl/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/toast/tf2gl/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/toast/tf2gl/Texture.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +65,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/gdx-bullet" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.35287082" />
+    <property name="project.structure.side.proportion" value="0.15313935" />
     <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Joshua\Documents\GitHub\TF2-csharp" />
+      <recent name="D:\Users\Joshua\Documents\GitHub\TF2-csharp\resources\assets" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -92,5 +109,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

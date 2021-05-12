@@ -1,33 +1,41 @@
 package me.toast.tf2gl;
 
+import org.joml.Matrix4f;
+import org.joml.Vector3f;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
 
-import java.nio.ByteBuffer;
-import java.nio.IntBuffer;
+import java.nio.FloatBuffer;
 
 import static org.lwjgl.glfw.Callbacks.*;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL33.*;
 import static org.lwjgl.system.MemoryUtil.*;
-import static org.lwjgl.stb.STBImage.*;
 
 public class Main {
     // The window handle
     private long window;
+    int width = 800;
+    int height = 800;
+    GLCapabilities capabilities;
 
     float[] vertices =
     { //     COORDINATES     /        COLORS      /   TexCoord  //
-            -0.5f, -0.5f, 0.0f,     1.0f, 0.0f, 0.0f,	0.0f, 0.0f, // Lower left corner
-            -0.5f,  0.5f, 0.0f,     0.0f, 1.0f, 0.0f,	0.0f, 1.0f, // Upper left corner
-            0.5f,  0.5f, 0.0f,     0.0f, 0.0f, 1.0f,	1.0f, 1.0f, // Upper right corner
-            0.5f, -0.5f, 0.0f,     1.0f, 1.0f, 1.0f,	1.0f, 0.0f  // Lower right corner
+            -0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	0.0f, 0.0f,
+            -0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	5.0f, 0.0f,
+            0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	0.0f, 0.0f,
+            0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	5.0f, 0.0f,
+            0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	2.5f, 5.0f
     };
 
     int[] indices =  {
-            0, 2, 1, // Upper triangle
-            0, 3, 2 // Lower triangle
+            0, 1, 2,
+            0, 2, 3,
+            0, 1, 4,
+            1, 2, 4,
+            2, 3, 4,
+            3, 0, 4
     };
 
     public void run() {
@@ -58,7 +66,7 @@ public class Main {
         glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE); // the window will be resizable
 
         // Create the window
-        window = glfwCreateWindow(800, 800, "Team Fortress 2 OpenGL & Java", NULL, NULL);
+        window = glfwCreateWindow(width, height, "Josh Lyman", NULL, NULL);
         if ( window == NULL )
             throw new RuntimeException("Failed to create the GLFW window");
 
@@ -66,6 +74,14 @@ public class Main {
         glfwSetKeyCallback(window, (window, key, scancode, action, mods) -> {
             if ( key == GLFW_KEY_ESCAPE && action == GLFW_RELEASE )
                 glfwSetWindowShouldClose(window, true); // We will detect this in the rendering loop
+        });
+
+        glfwSetWindowSizeCallback(window, (window, width, height) -> {
+            if(capabilities != null) {
+                this.width = width;
+                this.height = height;
+                glViewport(0, 0, width, height);
+            }
         });
 
         // Make the OpenGL context current
@@ -83,9 +99,9 @@ public class Main {
         // LWJGL detects the context that is current in the current thread,
         // creates the GLCapabilities instance and makes the OpenGL
         // bindings available for use.
-        GL.createCapabilities();
+        capabilities = GL.createCapabilities();
 
-        glViewport(0, 0, 800, 800);
+        glViewport(0, 0, width, height);
 
         // Set the clear color
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -115,6 +131,17 @@ public class Main {
         Texture josh = new Texture("./assets/textures/josh.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
         josh.TextureUnit(shader, "tex0", 0);
 
+        // Variables that help the rotation of the pyramid
+        float rotation = 0.0f;
+        double prevTime = glfwGetTime();
+
+        FloatBuffer modelBuffer = BufferUtils.createFloatBuffer(16);
+        FloatBuffer viewBuffer = BufferUtils.createFloatBuffer(16);
+        FloatBuffer projBuffer = BufferUtils.createFloatBuffer(16);
+
+        // Enables the Depth Buffer
+        glEnable(GL_DEPTH_TEST);
+
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
         while ( !glfwWindowShouldClose(window) ) {
@@ -122,12 +149,39 @@ public class Main {
 
             //Tell GL we want to use this Shader
             shader.Bind();
+
+            // Simple timer
+            double crntTime = glfwGetTime();
+            if (crntTime - prevTime >= 1 / 60)
+            {
+                rotation += 0.5f;
+                prevTime = crntTime;
+            }
+
+            Matrix4f model = new Matrix4f();
+            Matrix4f view = new Matrix4f();
+            Matrix4f proj = new Matrix4f();
+
+            model.rotate((float) Math.toRadians(rotation), new Vector3f(0.0f, 1.0f, 0.0f), model);
+            view.translate(new Vector3f(0.0f, -0.5f, -2.0f), view);
+            proj.perspective((float) Math.toRadians(45.0f), (float) width/height, 0.1f, 100.0f);
+
+            // Outputs the matrices into the Vertex Shader
+            int modelLoc = glGetUniformLocation(shader.ID, "model");
+            glUniformMatrix4fv(modelLoc, false, model.get(modelBuffer));
+
+            int viewLoc = glGetUniformLocation(shader.ID, "view");
+            glUniformMatrix4fv(viewLoc, false, view.get(viewBuffer));
+
+            int projLoc = glGetUniformLocation(shader.ID, "proj");
+            glUniformMatrix4fv(projLoc, false, proj.get(projBuffer));
+
             glUniform1f(uniID, 0.5f);
             josh.Bind();
             //Tell GL we want to use this VAO
             vao.Bind();
             //Draw the triangle
-            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+            glDrawElements(GL_TRIANGLES, indices.length, GL_UNSIGNED_INT, 0);
 
             glfwSwapBuffers(window);
             glfwPollEvents();
@@ -143,5 +197,4 @@ public class Main {
     public static void main(String[] args) {
         new Main().run();
     }
-
 }

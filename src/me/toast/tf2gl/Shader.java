@@ -3,7 +3,6 @@ package me.toast.tf2gl;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
 import static org.lwjgl.opengl.GL30.*;
 

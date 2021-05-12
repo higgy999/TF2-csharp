@@ -2,6 +2,7 @@ package me.toast.tf2gl;
 
 import org.lwjgl.BufferUtils;
 
+import java.net.URL;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 
