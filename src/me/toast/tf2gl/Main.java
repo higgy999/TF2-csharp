@@ -66,7 +66,7 @@ public class Main {
         glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE); // the window will be resizable
 
         // Create the window
-        window = glfwCreateWindow(width, height, "Josh Lyman", NULL, NULL);
+        window = glfwCreateWindow(width, height, "Team Fortress 2 | OpenGL & Java", NULL, NULL);
         if ( window == NULL )
             throw new RuntimeException("Failed to create the GLFW window");
 

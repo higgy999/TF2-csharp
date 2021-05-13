@@ -8,7 +8,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="libs" level="project" />
     <orderEntry type="library" name="com.badlogicgames.gdx:gdx-bullet:1.10.0" level="project" />
+    <orderEntry type="library" name="gdx-1.10.0" level="project" />
+    <orderEntry type="library" name="lwjgl-assimp-natives-linux-arm32" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
   </component>
 </module>
